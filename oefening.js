@@ -29,19 +29,3 @@ for (let i = 0; i < namen.length; i++){
 process.exit();
 
 
-/*
-let studenten = [];
-let i = 0;
-let naam = await userInput.question("geef je naam");
-
-while 
-(naam != "s"){
-studenten [i] = naam;
-i++;
-naam = await userInput.question("geef je naam");
-
-console.log(studenten);
-}
-process.exit();
-*/# Auto detect text files and perform LF normalization
-* text=auto
