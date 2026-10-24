@@ -1,2 +1,47 @@
-# Auto detect text files and perform LF normalization
+//naam.match('S[a-zA-Z]*')
+
+/* Studentenlijst
+Start met een lege array. Schrijf code om deze array op te vullen met namen. 
+Blijf dit herhalen tot je de waarde 'S' meegeeft om te stoppen. 
+Druk vervolgens je namenlijst af.*/
+
+
+import * as readline from 'node:readline/promises';
+import{stdin as input, stdout as output} from 'node:process';
+const userInput = readline.createInterface({input, output});
+
+let namen =[];
+
+let naam = await userInput.question('Geef een naam (S om te stoppen):');
+
+//naam.match('S[a-zA-Z]*') regex101
+while (naam !== 'S'){
+    namen.push(naam);
+    naam = await userInput.question('Geef een naam (S om te stoppen):');
+}
+
+console.log('Namenlijst:');
+
+
+for (let i = 0; i < namen.length; i++){
+    console.log(namen[i]);
+}
+process.exit();
+
+
+/*
+let studenten = [];
+let i = 0;
+let naam = await userInput.question("geef je naam");
+
+while 
+(naam != "s"){
+studenten [i] = naam;
+i++;
+naam = await userInput.question("geef je naam");
+
+console.log(studenten);
+}
+process.exit();
+*/# Auto detect text files and perform LF normalization
 * text=auto
